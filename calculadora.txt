@@ -1,0 +1,45 @@
+#include <stdio.h> 
+int main() 
+{ 
+    int n1, n2;
+    int opcao; 
+    printf("Bem vindo a calculadora do Gustavo, aqui calculamos tudo incluindo o que sobrou pro beta"); 
+    int divi, mult, subt, soma; 
+    printf("\ndigite 1 para soma ");
+    printf("\ndigite 2 para subtração "); 
+    printf("\ndigite 3 para multiplicação "); 
+    printf("\ndigite 4 para divisão "); 
+    scanf("%d", &opcao); 
+    printf("\nDigite um número ");
+    scanf("%d", &n1);
+    printf("\nDigite um número mais uma vez ");
+    scanf("%d", &n2); 
+    printf("\nEscolha a operação "); 
+    soma = n1 + n2; 
+    subt = n1 - n2;
+    mult = n1 * n2;
+    if (opcao == 1) 
+    printf("Resultado: %d", soma);
+    else if (opcao == 2)
+    printf("Resultado: %d", subt);
+    else if (opcao == 3) 
+    printf("Resultado: %d", mult);
+    else if (opcao == 4)
+    {
+    if (n2 == 0)
+    {
+    printf("\nErro, não podemos dividir por zero, abrindo buraco negro agora 🌀");
+    }
+    else
+    {
+    divi = n1 / n2;
+    printf("Resultado: %d", divi);
+    }
+    }
+    {
+    }
+   
+    
+    return 0; 
+    
+}
